@@ -36,6 +36,7 @@ keyboard_controller.release(keyboard.Key.ctrl_l)
 #opens notepad
 keyboard_controller.type("notepad")
 keyboard_controller.press(keyboard.Key.enter) 
+time.sleep(0.5)
 
 #makes new notepad
 keyboard_controller.press(keyboard.Key.ctrl_l)
@@ -43,7 +44,7 @@ keyboard_controller.press('t')
 time.sleep(0.1)
 keyboard_controller.release(keyboard.Key.backspace)
 keyboard_controller.release('t')
-time.sleep(1.0)
+time.sleep(0.5)
 
 #types "poop"
 keyboard_controller.type("POOP!!!!")
@@ -55,4 +56,7 @@ keyboard_controller.press('s')
 time.sleep(0.1)
 keyboard_controller.release('s')
 keyboard_controller.release(keyboard.Key.ctrl_l)
+time.sleep(0.3)
+keyboard_controller.press(keyboard.Key.enter)
+keyboard_controller.release(keyboard.Key.enter)
 
