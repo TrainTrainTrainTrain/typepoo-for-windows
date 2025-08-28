@@ -1,7 +1,8 @@
 import subprocess
 import sys
 
-package_name = "pynput" # Replace with the package you want to install
+#allows for input
+package_name = "pynput" 
 
 
 try:
@@ -59,4 +60,5 @@ keyboard_controller.release(keyboard.Key.ctrl_l)
 time.sleep(0.3)
 keyboard_controller.press(keyboard.Key.enter)
 keyboard_controller.release(keyboard.Key.enter)
+
 
